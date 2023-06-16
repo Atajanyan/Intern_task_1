@@ -1,4 +1,4 @@
-@import url(./styles/header.css);
+@import "./styles/header.css";
 
 * {
   margin: 0;
@@ -7,9 +7,9 @@
 }
 
 body {
-    font-family: "DM Sans";
-    font-style: normal;
-  }
+  font-family: "DM Sans";
+  font-style: normal;
+}
 
 .logo {
   width: 259px;
@@ -24,14 +24,14 @@ body {
   color: #ffffff;
   display: flex;
   justify-content: center;
-  gap: 32px;
+  gap: 30px;
   font-weight: 700;
   font-size: 16px;
   line-height: 100%;
 }
 
 .button {
-  width: 194px;
+  width: 190px;
   height: 61px;
   color: #57b3fe;
   background-color: #ffffff;
@@ -39,4 +39,41 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.burger-menu{
+  width: 50px;
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .logo {
+    width: 150px;
+    height: 40px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  .menu {
+    gap: 20px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+    .menu{
+        gap:10px
+    }
+
+    .logo{
+        height: 30px;
+        background-size: 90% auto;
+      }
+}
+
+@media screen and (max-width: 600px) {
+    .menu{
+        display: none;
+    }
 }
