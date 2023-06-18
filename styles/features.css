@@ -1,0 +1,134 @@
+.features {
+  width: 100%;
+  background-image: url(../assets/images/bg1.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 500px;
+}
+
+.span--green {
+  width: 100%;
+  height: 15px;
+  color: #00a077;
+}
+
+.features__container {
+  width: 62%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.features__container__text {
+  width: 100%;
+}
+
+.features__container--title {
+  width: 528px;
+  height: 118px;
+  color: #3b3e43;
+}
+
+.features__blocks {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.features-block {
+  width: 370px;
+  height: 335px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 45px 0 40px;
+  justify-content: center;
+  gap: 15px;
+}
+
+.features-block__icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+}
+
+.features-block__icon--bg1 {
+  background-color: #ffe7db;
+}
+
+.features-block__icon--bg2 {
+  background-color: #e7f2ef;
+}
+
+.features-block__icon--bg3 {
+  background-color: #faf3d8;
+}
+
+.features-block__icon--bg4 {
+  background-color: #c0f2ef;
+}
+
+.features-block__icon--bg5 {
+  background-color: #ede7f2;
+}
+
+.features-block__icon--bg6 {
+  background-color: #d8f0fa;
+}
+
+.features-block--description {
+  width: 306px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595e64;
+}
+
+.features-block--span {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+  .features__container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .features {
+    margin-top: 0;
+  }
+  .features__container--title {
+    width: 400px;
+    font-size: 40px !important;
+  }
+
+  .features__container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .features__container--title {
+    width: 260px;
+    font-size: 30px !important;
+  }
+
+  .features-block {
+    margin-left: 10px;
+  }
+
+  .features-block--description {
+    width: 200px !important;
+  }
+}
