@@ -1,4 +1,9 @@
-@import "./styles/header.css";
+@import url(./styles/header.css);
+@import url(./styles/features.css);
+@import url(./styles/process.css);
+@import url(./styles/brands.css);
+@import url(./styles/working.css);
+@import url(./styles/footer.css);
 
 * {
   margin: 0;
@@ -9,6 +14,10 @@
 body {
   font-family: "DM Sans";
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 450px;
+  background-color: #f2f2f2;
 }
 
 .logo {
@@ -41,12 +50,38 @@ body {
   align-items: center;
 }
 
-.burger-menu{
+.burger-menu {
   width: 50px;
   display: none;
 }
 
+.span {
+  opacity: 0.5;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 122%;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 122%;
+}
+
+.subTitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #3b3e43;
+}
+
 @media screen and (max-width: 1200px) {
+  body {
+    gap: 300px;
+  }
+
   .logo {
     width: 150px;
     height: 40px;
@@ -62,18 +97,22 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-    .menu{
-        gap:10px
-    }
+  body {
+    gap: 100px;
+  }
 
-    .logo{
-        height: 30px;
-        background-size: 90% auto;
-      }
+  .menu {
+    gap: 10px;
+  }
+
+  .logo {
+    height: 30px;
+    background-size: 90% auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .menu{
-        display: none;
-    }
+  .menu {
+    display: none;
+  }
 }
