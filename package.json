@@ -1,0 +1,24 @@
+{
+  "name": "intership_01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atajanyan/Intern_task_1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Atajanyan/Intern_task_1/issues"
+  },
+  "homepage": "https://github.com/Atajanyan/Intern_task_1#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
