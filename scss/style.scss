@@ -431,14 +431,15 @@ body {
   }
   .logo {
     width: 200px;
+    &__name {
+        font-size: 20px;
+      }
+    
+      &__img {
+        max-width: 70px;
+      }
   }
-  .logo__name {
-    font-size: 20px;
-  }
-
-  .logo__img {
-    max-width: 70px;
-  }
+ 
 
   .button {
     width: 120px;
